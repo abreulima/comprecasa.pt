@@ -3,49 +3,119 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind CSS</title>
+        <title>Ricardo Quagliareli</title>
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body class="bg-[url(images/lisbon-2.jpg)] py-4 font-[WorkSans]">
-        <div class="flex flex-col items-center gap-2 mx-auto w-lg bg-white/10 backdrop-blur-sm p-4 rounded-sm shadow-lg">
+    <body class="bg-[url(images/lisbon-2.jpg)] bg-cover min-h-screen py-4 ">
+        <div class="flex flex-col items-center gap-2 mx-auto 
+                    w-full max-w-lg 
+                    px-4 sm:px-6
+                    p-4 sm:p-6 
+                    bg-white/10 backdrop-blur-sm 
+                    rounded shadow-lg">
             
             <img class="size-42 rounded-full" src="images/ricardo_profile.jpg"  />
             <h1 class="text-2xl">
-                Ricardo Quagliarelli
+                Ricardo Quagliareli
             </h1>
-            <p>
-                Pai de familia, brasileiro, e agora teu corretor favorito.
-            </p>
 
-            <!-- Links -->
-            <div class="w-full bg-white/60 backdrop-blur-sm shadow-lg p-3 rounded-sm ">
-                Compre Casa
-            </div>
-
-            <div class="w-full bg-white p-3 rounded-sm">
-                Compre Casa
-            </div>
-
-            <div class="w-full bg-white p-3 rounded-sm">
-                Compre Casa
+            <div class="flex flex-col items-center">
+                <p>Consultor de imóveis.</p>
+                <p>Compra · Venda · Arrendamento · Investimento</p>
+                <p>Da análise de crédito às chaves em mãos.</p>
             </div>
 
             <!-- Redes Sociais -->
-            <div class="w-full justify-center flex gap-8 p-4">
-                <div class="">
-                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+
+            <div class="w-full justify-center flex gap-8 p-4 ">
+             
+                <div class="transition-transform duration-300 ease-in-out hover:scale-125">
+                    <a href="tel:+351960312511">
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                    </a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-envelope fa-2x"></i>
+                
+                <div class="transition-transform duration-300 ease-in-out hover:scale-125">
+                    <a href="https://api.whatsapp.com/send?phone=351960312511&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20im%C3%B3veis%20dispon%C3%ADveis.">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                    </a>
                 </div>
-                <div>
-                    <i class="fa-brands fa-instagram fa-2x"></i>
+
+                <div class="transition-transform duration-300 ease-in-out hover:scale-125">
+                    <a href="mailto:ricardojunior@kwportugal.pt">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </a>
                 </div>
+                
+                <div class="transition-transform duration-300 ease-in-out hover:scale-125">
+                    <a href="https://www.instagram.com/ricardoquagliareli.consultor">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+
             </div>
+
+            <!-- Links -->
+             
+            <div>
+                <a href="#_" class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
+                <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">Quero vender ou arrendar minha casa.</span>
+                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#_" class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
+                <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                    Quero comprar ou arrendar uma casa.
+                </span>
+                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#_" class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
+                <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                    Solicite uma análise de crédito habitação.
+                </span>
+                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                </a>
+            </div>
+
+            <div>
+                <a href="tel:+351960312511" class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
+                <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                <span class="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>960 312 511</span>
+                    </div>    
+                </span>
+                <span class="absolute inset-0 border-2 border-white rounded-full"></span>
+                </a>
+            </div>
+
+            <!-- 
+            <div class="w-full bg-white p-3 rounded-sm">
+                Compre comprar ou arrendar uma casa.
+            </div>
+            -->
+
+            <!-- Sobre -->
+            <h1></h1>
+
 
         </div>
     </body>
